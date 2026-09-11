@@ -1,0 +1,2176 @@
+{
+  "sets": {
+    "Set 1": [
+      {
+        "id": "APP-001",
+        "category": "Applications",
+        "text": "Which of the following is an example of system software?",
+        "options": [
+          "Microsoft Word",
+          "Windows Operating System",
+          "Adobe Photoshop",
+          "Google Chrome"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "APP-002",
+        "category": "Applications",
+        "text": "A file with the extension '.pdf' is most likely to be opened with which type of application?",
+        "options": [
+          "Spreadsheet application",
+          "Document/PDF reader application",
+          "Video player",
+          "Antivirus application"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "APP-003",
+        "category": "Applications",
+        "text": "Which shortcut key is used to copy selected text in most applications?",
+        "options": [
+          "Ctrl + V",
+          "Ctrl + X",
+          "Ctrl + C",
+          "Ctrl + Z"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "APP-004",
+        "category": "Applications",
+        "text": "Which shortcut key is used to paste copied content?",
+        "options": [
+          "Ctrl + P",
+          "Ctrl + V",
+          "Ctrl + C",
+          "Ctrl + N"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "APP-005",
+        "category": "Applications",
+        "text": "Which shortcut is commonly used to undo the last action in an application?",
+        "options": [
+          "Ctrl + Y",
+          "Ctrl + Z",
+          "Ctrl + U",
+          "Ctrl + R"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "APP-006",
+        "category": "Applications",
+        "text": "Which of these file extensions represents a compressed/archive file?",
+        "options": [
+          ".docx",
+          ".zip",
+          ".mp3",
+          ".exe"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "APP-007",
+        "category": "Applications",
+        "text": "Which application type is used to view and browse websites?",
+        "options": [
+          "Web browser",
+          "Media player",
+          "Text editor",
+          "Disk cleanup tool"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-008",
+        "category": "Applications",
+        "text": "WhatsApp and Telegram are examples of which type of application?",
+        "options": [
+          "Messaging/communication applications",
+          "Antivirus applications",
+          "Database applications",
+          "Operating systems"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-009",
+        "category": "Applications",
+        "text": "Which of the following is an example of an open-source application?",
+        "options": [
+          "Microsoft Office",
+          "VLC Media Player",
+          "Adobe Acrobat Pro",
+          "macOS"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "APP-010",
+        "category": "Applications",
+        "text": "What is the primary purpose of antivirus software?",
+        "options": [
+          "To speed up the CPU",
+          "To detect and remove malicious software",
+          "To compress files",
+          "To design graphics"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "OFT-001",
+        "category": "Office Tools",
+        "text": "In MS Word, which shortcut key is used to make selected text bold?",
+        "options": [
+          "Ctrl + B",
+          "Ctrl + I",
+          "Ctrl + U",
+          "Ctrl + L"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-002",
+        "category": "Office Tools",
+        "text": "In MS Excel, which formula is used to add a range of numbers?",
+        "options": [
+          "=SUM(range)",
+          "=ADD(range)",
+          "=TOTAL(range)",
+          "=PLUS(range)"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-003",
+        "category": "Office Tools",
+        "text": "In MS Excel, what symbol is used to make a cell reference absolute (e.g., $A$1)?",
+        "options": [
+          "#",
+          "$",
+          "%",
+          "&"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "OFT-004",
+        "category": "Office Tools",
+        "text": "Which MS Office application is primarily used for creating slide presentations?",
+        "options": [
+          "MS PowerPoint",
+          "MS Word",
+          "MS Excel",
+          "MS Access"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-005",
+        "category": "Office Tools",
+        "text": "In MS Word, the 'Mail Merge' feature is mainly used to:",
+        "options": [
+          "Send the same letter to multiple recipients with personalized details",
+          "Merge two Excel sheets",
+          "Compress a document",
+          "Insert a chart"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-006",
+        "category": "Office Tools",
+        "text": "Which Excel function returns the average of a range of numbers?",
+        "options": [
+          "=AVERAGE(range)",
+          "=MEAN(range)",
+          "=MID(range)",
+          "=SUM(range)"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-007",
+        "category": "Office Tools",
+        "text": "In MS Excel, a group of worksheets together is called a:",
+        "options": [
+          "Workbook",
+          "Worksheet",
+          "Cell",
+          "Ribbon"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-008",
+        "category": "Office Tools",
+        "text": "In MS Word, which tab typically contains options to insert page numbers?",
+        "options": [
+          "Insert",
+          "Home",
+          "References",
+          "Review"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-009",
+        "category": "Office Tools",
+        "text": "Which shortcut in MS Word is used to underline selected text?",
+        "options": [
+          "Ctrl + U",
+          "Ctrl + B",
+          "Ctrl + I",
+          "Ctrl + N"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-010",
+        "category": "Office Tools",
+        "text": "In MS Excel, the VLOOKUP function is primarily used to:",
+        "options": [
+          "Search for a value in the first column of a range and return a value in the same row",
+          "Sort data alphabetically",
+          "Create a chart",
+          "Merge cells"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-001",
+        "category": "Technology",
+        "text": "What does 'CPU' stand for?",
+        "options": [
+          "Central Processing Unit",
+          "Computer Personal Unit",
+          "Central Program Utility",
+          "Control Processing Unit"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-002",
+        "category": "Technology",
+        "text": "Which of the following is a volatile memory that loses data when power is off?",
+        "options": [
+          "RAM",
+          "ROM",
+          "Hard Disk",
+          "Pen Drive"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-003",
+        "category": "Technology",
+        "text": "Which of the following storage devices is generally faster than a traditional Hard Disk Drive (HDD)?",
+        "options": [
+          "Solid State Drive (SSD)",
+          "Floppy Disk",
+          "CD-ROM",
+          "Magnetic Tape"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-004",
+        "category": "Technology",
+        "text": "What does 'LAN' stand for?",
+        "options": [
+          "Local Area Network",
+          "Large Area Network",
+          "Live Area Network",
+          "Long Access Network"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-005",
+        "category": "Technology",
+        "text": "Which device is used to connect multiple networks and direct data traffic between them?",
+        "options": [
+          "Router",
+          "Monitor",
+          "Keyboard",
+          "Printer"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-006",
+        "category": "Technology",
+        "text": "What does 'IP address' primarily identify?",
+        "options": [
+          "A unique address of a device on a network",
+          "The name of a website",
+          "The brand of a computer",
+          "The speed of the internet"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-007",
+        "category": "Technology",
+        "text": "Which of the following is a type of malicious software that can replicate itself and spread to other computers?",
+        "options": [
+          "Virus",
+          "Firewall",
+          "Router",
+          "Antivirus"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-008",
+        "category": "Technology",
+        "text": "What is 'phishing'?",
+        "options": [
+          "A fraudulent attempt to obtain sensitive information by pretending to be a trustworthy source",
+          "A method of speeding up internet connections",
+          "A type of computer hardware",
+          "A method of compressing files"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-009",
+        "category": "Technology",
+        "text": "What does 'HTTPS' indicate about a website?",
+        "options": [
+          "The connection is encrypted and more secure than plain HTTP",
+          "The website is free to use",
+          "The website is government-owned",
+          "The website has no images"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-010",
+        "category": "Technology",
+        "text": "What is the function of a firewall in a computer network?",
+        "options": [
+          "To monitor and control incoming/outgoing network traffic for security",
+          "To increase screen brightness",
+          "To print documents",
+          "To store large files"
+        ],
+        "answer": 0
+      }
+    ],
+    "Set 2": [
+      {
+        "id": "APP-011",
+        "category": "Applications",
+        "text": "Which key combination is typically used to select all content in a document?",
+        "options": [
+          "Ctrl + A",
+          "Ctrl + S",
+          "Ctrl + F",
+          "Ctrl + D"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-012",
+        "category": "Applications",
+        "text": "Which application is commonly used to compress and extract files with a '.rar' or '.zip' extension?",
+        "options": [
+          "WinRAR / 7-Zip",
+          "Notepad",
+          "Paint",
+          "Calculator"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-013",
+        "category": "Applications",
+        "text": "DigiLocker is an Indian government application mainly used for:",
+        "options": [
+          "Online gaming",
+          "Storing and verifying digital documents",
+          "Video editing",
+          "Sending emails only"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "APP-014",
+        "category": "Applications",
+        "text": "Which of the following best describes 'freeware'?",
+        "options": [
+          "Software that is free to use but source code is not necessarily open",
+          "Software that must always be purchased",
+          "A type of computer virus",
+          "A hardware component"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-015",
+        "category": "Applications",
+        "text": "Which shortcut is used to open the 'Find' dialog box in most applications?",
+        "options": [
+          "Ctrl + F",
+          "Ctrl + H",
+          "Ctrl + G",
+          "Ctrl + L"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-016",
+        "category": "Applications",
+        "text": "Task Manager in Windows is primarily used to:",
+        "options": [
+          "Edit photos",
+          "Monitor and manage running applications and processes",
+          "Browse the internet",
+          "Format a hard disk"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "APP-017",
+        "category": "Applications",
+        "text": "Which of these is a cloud storage application?",
+        "options": [
+          "Google Drive",
+          "Notepad",
+          "Paint",
+          "Calculator"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-018",
+        "category": "Applications",
+        "text": "An application that allows video calls such as online interviews is:",
+        "options": [
+          "Zoom / Google Meet",
+          "Microsoft Excel",
+          "Adobe Reader",
+          "File Explorer"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-019",
+        "category": "Applications",
+        "text": "What does 'installing' an application mean?",
+        "options": [
+          "Deleting the application permanently",
+          "Setting up the application so it can run on a device",
+          "Compressing the application files",
+          "Renaming the application"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "APP-020",
+        "category": "Applications",
+        "text": "Which of the following is NOT an operating system?",
+        "options": [
+          "Windows",
+          "Linux",
+          "Android",
+          "Microsoft Excel"
+        ],
+        "answer": 3
+      },
+      {
+        "id": "OFT-011",
+        "category": "Office Tools",
+        "text": "In MS PowerPoint, which feature controls how one slide changes to the next?",
+        "options": [
+          "Slide Transition",
+          "Slide Master",
+          "Mail Merge",
+          "Pivot Table"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-012",
+        "category": "Office Tools",
+        "text": "Which key combination is used to print a document in most MS Office applications?",
+        "options": [
+          "Ctrl + P",
+          "Ctrl + O",
+          "Ctrl + N",
+          "Ctrl + E"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-013",
+        "category": "Office Tools",
+        "text": "In MS Excel, what does the 'IF' function do?",
+        "options": [
+          "Performs a logical test and returns one value if TRUE and another if FALSE",
+          "Adds all values in a column",
+          "Deletes empty cells",
+          "Formats text as currency"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-014",
+        "category": "Office Tools",
+        "text": "In MS Word, 'Track Changes' is used to:",
+        "options": [
+          "Record edits made to a document for review",
+          "Automatically translate the document",
+          "Compress the file size",
+          "Password-protect the document"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-015",
+        "category": "Office Tools",
+        "text": "In MS Excel, freezing panes allows the user to:",
+        "options": [
+          "Keep specific rows/columns visible while scrolling",
+          "Lock the entire workbook from editing",
+          "Convert the sheet to a PDF",
+          "Delete blank rows automatically"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-016",
+        "category": "Office Tools",
+        "text": "Which MS Office application is best suited for managing email, calendar, and contacts?",
+        "options": [
+          "MS Outlook",
+          "MS Excel",
+          "MS PowerPoint",
+          "MS Publisher"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-017",
+        "category": "Office Tools",
+        "text": "In an email application, 'BCC' stands for:",
+        "options": [
+          "Blind Carbon Copy",
+          "Basic Carbon Copy",
+          "Block Carbon Copy",
+          "Bulk Carbon Copy"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-018",
+        "category": "Office Tools",
+        "text": "In MS Excel, a Pivot Table is mainly used to:",
+        "options": [
+          "Summarize and analyze large amounts of data",
+          "Insert images into a worksheet",
+          "Check spelling errors",
+          "Protect a workbook with a password"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-019",
+        "category": "Office Tools",
+        "text": "In MS Word, which feature checks a document for spelling and grammar errors?",
+        "options": [
+          "Spelling & Grammar check",
+          "Track Changes",
+          "Mail Merge",
+          "Page Layout"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-020",
+        "category": "Office Tools",
+        "text": "In MS PowerPoint, 'Slide Master' is used to:",
+        "options": [
+          "Apply consistent formatting/design across all slides",
+          "Play the slideshow automatically",
+          "Record narration only",
+          "Insert a table of contents"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-011",
+        "category": "Technology",
+        "text": "Which of the following best describes 'two-factor authentication (2FA)'?",
+        "options": [
+          "A security process requiring two different forms of verification to log in",
+          "A type of virus",
+          "A method to increase internet speed",
+          "A way to compress video files"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-012",
+        "category": "Technology",
+        "text": "What is the primary purpose of Aadhaar in India?",
+        "options": [
+          "A unique identification number linked to biometric and demographic data of residents",
+          "A type of mobile network",
+          "A web browser",
+          "A type of computer virus"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-013",
+        "category": "Technology",
+        "text": "CCTNS stands for:",
+        "options": [
+          "Crime and Criminal Tracking Network and Systems",
+          "Central Cyber Threat Notification System",
+          "Computerized Crime Tracking National Server",
+          "Criminal Case Transfer Network System"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-014",
+        "category": "Technology",
+        "text": "What does 'GB' (Gigabyte) measure?",
+        "options": [
+          "Digital data storage size",
+          "Processor speed",
+          "Screen resolution",
+          "Battery life"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-015",
+        "category": "Technology",
+        "text": "Which of the following is an example of an input device?",
+        "options": [
+          "Keyboard",
+          "Monitor",
+          "Printer",
+          "Speaker"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-016",
+        "category": "Technology",
+        "text": "Which of the following is an example of an output device?",
+        "options": [
+          "Monitor",
+          "Keyboard",
+          "Mouse",
+          "Scanner"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-017",
+        "category": "Technology",
+        "text": "What is the main function of 'RAM' in a computer?",
+        "options": [
+          "Temporarily stores data/instructions the CPU is actively using",
+          "Permanently stores the operating system",
+          "Displays images on the screen",
+          "Connects the computer to the internet"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-018",
+        "category": "Technology",
+        "text": "What does 'Wi-Fi' primarily provide?",
+        "options": [
+          "Wireless connectivity to a local network/internet",
+          "A type of computer virus protection",
+          "A wired cable connection only",
+          "A method to print documents"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-019",
+        "category": "Technology",
+        "text": "What is the function of DNS (Domain Name System)?",
+        "options": [
+          "Translates website domain names into IP addresses",
+          "Encrypts emails",
+          "Compresses video files",
+          "Controls printer settings"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-020",
+        "category": "Technology",
+        "text": "Which of the following best defines 'cloud computing'?",
+        "options": [
+          "Delivery of computing services (storage, servers, software) over the internet",
+          "A weather forecasting application",
+          "A type of computer virus",
+          "A local-only storage method"
+        ],
+        "answer": 0
+      }
+    ],
+    "Set 3": [
+      {
+        "id": "APP-021",
+        "category": "Applications",
+        "text": "A QR code scanning feature is most commonly found in which type of application?",
+        "options": [
+          "Camera / scanner mobile applications",
+          "Spreadsheet applications",
+          "Word processors",
+          "Disk defragmenter"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-022",
+        "category": "Applications",
+        "text": "What is the purpose of 'Safe Mode' when starting a computer?",
+        "options": [
+          "To play games faster",
+          "To start the OS with minimal drivers/programs for troubleshooting",
+          "To increase internet speed",
+          "To install new applications only"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "APP-023",
+        "category": "Applications",
+        "text": "Which of the following is an example of a search engine, not a browser?",
+        "options": [
+          "Google Search",
+          "Google Chrome",
+          "Mozilla Firefox",
+          "Microsoft Edge"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-024",
+        "category": "Applications",
+        "text": "Which term describes software still under testing before its full public release?",
+        "options": [
+          "Beta version",
+          "Legacy version",
+          "Portable version",
+          "Firmware version"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-025",
+        "category": "Applications",
+        "text": "The 'Control Panel' or 'Settings' app in an operating system is mainly used to:",
+        "options": [
+          "Configure system and application settings",
+          "Write documents",
+          "Edit videos",
+          "Browse the web"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-026",
+        "category": "Applications",
+        "text": "Which of the following file formats is used for images?",
+        "options": [
+          ".jpg",
+          ".xlsx",
+          ".pptx",
+          ".mp3"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-027",
+        "category": "Applications",
+        "text": "An 'app permission' request for camera access on a mobile phone is an example of:",
+        "options": [
+          "Application security/privacy control",
+          "A software virus",
+          "A hardware failure",
+          "A network protocol"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-028",
+        "category": "Applications",
+        "text": "Which application would you use to read and sign a PDF document digitally?",
+        "options": [
+          "Adobe Acrobat Reader",
+          "Paint",
+          "Calculator",
+          "Task Manager"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-029",
+        "category": "Applications",
+        "text": "What does 'uninstalling' software do?",
+        "options": [
+          "Updates the software to the latest version",
+          "Removes the software and its files from the device",
+          "Opens the software",
+          "Backs up the software"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "APP-030",
+        "category": "Applications",
+        "text": "UMANG is an Indian mobile application mainly meant for:",
+        "options": [
+          "Online shopping only",
+          "Accessing various government e-services on one platform",
+          "Playing videos",
+          "Editing spreadsheets"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "OFT-021",
+        "category": "Office Tools",
+        "text": "In MS Excel, which of the following correctly represents a cell reference?",
+        "options": [
+          "B5",
+          "5B",
+          "B-5",
+          "5-B"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-022",
+        "category": "Office Tools",
+        "text": "In MS Word, changing the page from portrait to landscape is done from which tab?",
+        "options": [
+          "Layout",
+          "Home",
+          "Review",
+          "View"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-023",
+        "category": "Office Tools",
+        "text": "Which MS Excel feature allows data to be displayed only if it meets certain criteria?",
+        "options": [
+          "Filter",
+          "Merge Cells",
+          "Track Changes",
+          "Slide Master"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-024",
+        "category": "Office Tools",
+        "text": "In MS Word, inserting a header or footer allows text to appear:",
+        "options": [
+          "At the top or bottom of every page",
+          "Only on the last page",
+          "In the file name",
+          "Only in comments"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-025",
+        "category": "Office Tools",
+        "text": "In MS Excel, what is the correct formula to count non-empty cells in range A1:A10?",
+        "options": [
+          "=COUNTA(A1:A10)",
+          "=SUM(A1:A10)",
+          "=AVERAGE(A1:A10)",
+          "=IF(A1:A10)"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-026",
+        "category": "Office Tools",
+        "text": "Which of the following is the default file extension for a Word document (modern format)?",
+        "options": [
+          ".docx",
+          ".xlsx",
+          ".pptx",
+          ".pdf"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-027",
+        "category": "Office Tools",
+        "text": "Which of the following is the default file extension for an Excel workbook (modern format)?",
+        "options": [
+          ".xlsx",
+          ".docx",
+          ".pptx",
+          ".txt"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-028",
+        "category": "Office Tools",
+        "text": "In MS PowerPoint, which view shows thumbnails of all slides for easy reordering?",
+        "options": [
+          "Slide Sorter view",
+          "Presenter view",
+          "Notes Page view",
+          "Outline view"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-029",
+        "category": "Office Tools",
+        "text": "In MS Excel, conditional formatting is used to:",
+        "options": [
+          "Automatically format cells based on their values",
+          "Convert formulas to text",
+          "Password protect a cell",
+          "Insert a new worksheet"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-030",
+        "category": "Office Tools",
+        "text": "What is the primary purpose of 'Sort' in MS Excel?",
+        "options": [
+          "Arrange data in ascending or descending order",
+          "Merge two worksheets",
+          "Insert a chart",
+          "Protect the sheet"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-021",
+        "category": "Technology",
+        "text": "What is the purpose of a UPS (Uninterruptible Power Supply) connected to a computer?",
+        "options": [
+          "To provide backup power during electricity outages",
+          "To increase internet speed",
+          "To cool down the processor",
+          "To scan for viruses"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-022",
+        "category": "Technology",
+        "text": "Which of the following is a common symptom of a computer infected with malware?",
+        "options": [
+          "Unusual slowdowns, pop-ups, and unexpected crashes",
+          "Faster than normal boot time",
+          "Increased battery life",
+          "Brighter screen display"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-023",
+        "category": "Technology",
+        "text": "What does 'OTP' stand for in the context of online security?",
+        "options": [
+          "One-Time Password",
+          "Online Transfer Protocol",
+          "Open Text Page",
+          "Optical Transfer Pin"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-024",
+        "category": "Technology",
+        "text": "What is the primary purpose of data backup?",
+        "options": [
+          "To create copies of data to prevent loss in case of failure or disaster",
+          "To increase processor speed",
+          "To delete unnecessary files",
+          "To install new software"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-025",
+        "category": "Technology",
+        "text": "Which of the following best describes 'ransomware'?",
+        "options": [
+          "Malicious software that locks/encrypts data and demands payment for release",
+          "A free antivirus tool",
+          "A type of network cable",
+          "A government scheme for internet access"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-026",
+        "category": "Technology",
+        "text": "Bluetooth technology is primarily used for:",
+        "options": [
+          "Short-range wireless data transfer between devices",
+          "Long-distance satellite communication",
+          "Storing large files permanently",
+          "Speeding up a computer's processor"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-027",
+        "category": "Technology",
+        "text": "What does 'URL' stand for?",
+        "options": [
+          "Uniform Resource Locator",
+          "Universal Router Link",
+          "Unified Record Locator",
+          "User Reference Line"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-028",
+        "category": "Technology",
+        "text": "Which of the following is an example of biometric identification?",
+        "options": [
+          "Fingerprint scanning",
+          "Typing a username",
+          "Entering a postal code",
+          "Selecting a language"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-029",
+        "category": "Technology",
+        "text": "What is the primary purpose of the Information Technology (IT) Act, 2000 in India?",
+        "options": [
+          "To provide a legal framework for electronic governance and address cyber crimes",
+          "To regulate television broadcasting only",
+          "To manage road traffic",
+          "To license motor vehicles"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-030",
+        "category": "Technology",
+        "text": "Which of the following describes 'encryption'?",
+        "options": [
+          "Converting data into a coded form to prevent unauthorized access",
+          "Deleting data permanently",
+          "Compressing images for faster loading",
+          "Connecting two computers via cable"
+        ],
+        "answer": 0
+      }
+    ],
+    "Set 4": [
+      {
+        "id": "APP-031",
+        "category": "Applications",
+        "text": "Which shortcut is generally used to save a file in most applications?",
+        "options": [
+          "Ctrl + S",
+          "Ctrl + O",
+          "Ctrl + N",
+          "Ctrl + W"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-032",
+        "category": "Applications",
+        "text": "A 'plugin' or 'extension' in a browser is used to:",
+        "options": [
+          "Physically connect the computer to a printer",
+          "Add extra features/functionality to the browser",
+          "Replace the operating system",
+          "Increase RAM size"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "APP-033",
+        "category": "Applications",
+        "text": "Which of these is considered a media player application?",
+        "options": [
+          "VLC",
+          "MS Word",
+          "Outlook",
+          "Excel"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-034",
+        "category": "Applications",
+        "text": "What is the main function of a disk cleanup / disk defragmenter application?",
+        "options": [
+          "To free up space and optimize disk performance",
+          "To send emails",
+          "To design presentations",
+          "To scan fingerprints"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-035",
+        "category": "Applications",
+        "text": "Which of the following best describes a 'portable application'?",
+        "options": [
+          "An app that can run from a USB drive without full installation",
+          "An app that only works on mobile phones",
+          "An app that requires no internet ever",
+          "An app used only for gaming"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-036",
+        "category": "Applications",
+        "text": "Which of the following is an example of e-KYC verification commonly used in applications?",
+        "options": [
+          "Aadhaar-based OTP verification",
+          "Formatting a hard disk",
+          "Installing an antivirus",
+          "Compressing a video file"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-037",
+        "category": "Applications",
+        "text": "32-bit and 64-bit are terms that typically refer to a software application's:",
+        "options": [
+          "Color scheme",
+          "Architecture/compatibility with the processor",
+          "File size limit only for images",
+          "Number of installed fonts"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "APP-038",
+        "category": "Applications",
+        "text": "An application 'crash' refers to:",
+        "options": [
+          "The application unexpectedly stopping or closing",
+          "The application updating automatically",
+          "The application being uninstalled",
+          "The application changing its icon"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-039",
+        "category": "Applications",
+        "text": "Dark mode in an application is a feature that:",
+        "options": [
+          "Changes the interface to use darker colors, often to reduce eye strain",
+          "Encrypts all files automatically",
+          "Increases application speed",
+          "Disables notifications permanently"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-040",
+        "category": "Applications",
+        "text": "Which of the following applications is primarily used for note-taking?",
+        "options": [
+          "Notepad",
+          "Paint",
+          "Calculator",
+          "Disk Cleanup"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-031",
+        "category": "Office Tools",
+        "text": "In MS Outlook, an 'Out of Office' auto-reply is used to:",
+        "options": [
+          "Automatically inform senders that you are unavailable",
+          "Delete incoming emails",
+          "Forward all emails to another account",
+          "Block a sender permanently"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-032",
+        "category": "Office Tools",
+        "text": "In MS Word, which feature allows you to insert small illustrative diagrams like organizational charts?",
+        "options": [
+          "SmartArt",
+          "Track Changes",
+          "Mail Merge",
+          "Page Break"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-033",
+        "category": "Office Tools",
+        "text": "In MS Excel, merging cells means:",
+        "options": [
+          "Combining two or more adjacent cells into a single larger cell",
+          "Deleting the content of a cell",
+          "Protecting the cell with a password",
+          "Converting the cell into a chart"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-034",
+        "category": "Office Tools",
+        "text": "Which MS Office application is best suited for creating a simple database of records?",
+        "options": [
+          "MS Access",
+          "MS Word",
+          "MS PowerPoint",
+          "MS Paint"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-035",
+        "category": "Office Tools",
+        "text": "In MS PowerPoint, 'Presenter View' is mainly used to:",
+        "options": [
+          "Let the presenter see notes and upcoming slides while the audience sees only the slide",
+          "Automatically translate slides",
+          "Compress the presentation file",
+          "Merge multiple presentations"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-036",
+        "category": "Office Tools",
+        "text": "In MS Excel, what does 'auto-fill' do when you drag the fill handle?",
+        "options": [
+          "Automatically continues a pattern or series of data",
+          "Deletes the selected cells",
+          "Converts numbers into text",
+          "Protects the worksheet"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-037",
+        "category": "Office Tools",
+        "text": "In MS Word, a 'watermark' is typically used to:",
+        "options": [
+          "Display faint background text/image like 'CONFIDENTIAL' or 'DRAFT'",
+          "Encrypt the document",
+          "Count words in the document",
+          "Insert page numbers"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-038",
+        "category": "Office Tools",
+        "text": "In MS Excel, which of the following is a correct example of a formula?",
+        "options": [
+          "=A1+B1",
+          "A1+B1",
+          "A1=B1+",
+          "SUM A1 B1"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-039",
+        "category": "Office Tools",
+        "text": "In MS Word, which shortcut is used to italicize selected text?",
+        "options": [
+          "Ctrl + I",
+          "Ctrl + B",
+          "Ctrl + U",
+          "Ctrl + T"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-040",
+        "category": "Office Tools",
+        "text": "In MS PowerPoint, 'Notes Page' view is used to:",
+        "options": [
+          "Add and view speaker notes for each slide",
+          "Sort slides",
+          "Play a slideshow full-screen",
+          "Insert a new theme"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-031",
+        "category": "Technology",
+        "text": "What does 'GPS' stand for?",
+        "options": [
+          "Global Positioning System",
+          "General Purpose Server",
+          "Government Public Service",
+          "Graphic Processing System"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-032",
+        "category": "Technology",
+        "text": "A 'data breach' refers to:",
+        "options": [
+          "Unauthorized access to or disclosure of confidential information",
+          "A scheduled software update",
+          "A backup of important files",
+          "A type of internet connection"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-033",
+        "category": "Technology",
+        "text": "Which of the following network types typically covers a large geographic area, such as connecting cities or countries?",
+        "options": [
+          "WAN (Wide Area Network)",
+          "LAN (Local Area Network)",
+          "PAN (Personal Area Network)",
+          "None of the above"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-034",
+        "category": "Technology",
+        "text": "What is the function of a modem?",
+        "options": [
+          "Converts digital signals to analog and vice versa for internet connectivity",
+          "Stores files permanently",
+          "Displays video output",
+          "Scans documents"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-035",
+        "category": "Technology",
+        "text": "Which of the following best describes 'digital forensics'?",
+        "options": [
+          "The process of collecting and analyzing electronic evidence for investigations",
+          "A method of speeding up computers",
+          "A type of antivirus software",
+          "A method for compressing files"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-036",
+        "category": "Technology",
+        "text": "What is 'social engineering' in the context of cybersecurity?",
+        "options": [
+          "Manipulating people into revealing confidential information",
+          "A method of designing social media apps",
+          "A hardware upgrade technique",
+          "A type of programming language"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-037",
+        "category": "Technology",
+        "text": "NATGRID is primarily associated with:",
+        "options": [
+          "A national intelligence grid that links databases for security agencies in India",
+          "A social media platform",
+          "A private telecom company",
+          "An e-commerce website"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-038",
+        "category": "Technology",
+        "text": "Which of the following best describes 'Artificial Intelligence (AI)'?",
+        "options": [
+          "The simulation of human intelligence processes by computer systems",
+          "A type of physical computer hardware",
+          "A method of formatting a hard disk",
+          "A wired network cable"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-039",
+        "category": "Technology",
+        "text": "What is the main purpose of a 'password manager' application?",
+        "options": [
+          "To securely store and manage login credentials",
+          "To design graphics",
+          "To speed up internet browsing",
+          "To edit videos"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-040",
+        "category": "Technology",
+        "text": "Which unit is used to measure the speed of data transfer over a network?",
+        "options": [
+          "Mbps (Megabits per second)",
+          "Kilograms",
+          "Degrees Celsius",
+          "Decibels"
+        ],
+        "answer": 0
+      }
+    ],
+    "Set 5": [
+      {
+        "id": "APP-041",
+        "category": "Applications",
+        "text": "A 'trial version' of software typically means:",
+        "options": [
+          "The software can be used free for a limited time or with limited features",
+          "The software is completely free forever",
+          "The software cannot be installed",
+          "The software is a virus"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-042",
+        "category": "Applications",
+        "text": "Which application category does Google Maps belong to?",
+        "options": [
+          "Navigation/GPS application",
+          "Word processing application",
+          "Antivirus application",
+          "Spreadsheet application"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-043",
+        "category": "Applications",
+        "text": "The main purpose of an 'app store' (like Google Play Store) is to:",
+        "options": [
+          "Allow users to browse, download, and install mobile applications",
+          "Store physical hardware",
+          "Repair broken phones",
+          "Replace the operating system"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-044",
+        "category": "Applications",
+        "text": "Which of the following best describes 'multitasking' on a computer?",
+        "options": [
+          "Running multiple applications at the same time",
+          "Deleting multiple files at once",
+          "Installing an application twice",
+          "Formatting the hard disk"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-045",
+        "category": "Applications",
+        "text": "Ctrl + Alt + Delete on Windows is commonly used to:",
+        "options": [
+          "Access Task Manager / security options",
+          "Open a new browser tab",
+          "Print a document",
+          "Save a file"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-046",
+        "category": "Applications",
+        "text": "Which of the following is an example of a spreadsheet application?",
+        "options": [
+          "Microsoft Excel",
+          "Microsoft Word",
+          "Adobe Photoshop",
+          "VLC Media Player"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-047",
+        "category": "Applications",
+        "text": "An application's 'cache' generally refers to:",
+        "options": [
+          "Temporarily stored data used to speed up future access",
+          "A type of computer virus",
+          "The application's installation file",
+          "A hardware port"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-048",
+        "category": "Applications",
+        "text": "Which of the following applications would be most suitable for creating a presentation?",
+        "options": [
+          "Microsoft PowerPoint",
+          "Microsoft Excel",
+          "Notepad",
+          "File Explorer"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-049",
+        "category": "Applications",
+        "text": "Pinning an application to the taskbar allows a user to:",
+        "options": [
+          "Quickly access that application",
+          "Permanently delete the application",
+          "Encrypt the application",
+          "Increase the application's file size"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-050",
+        "category": "Applications",
+        "text": "Which of these best describes 'auto-save' in an application?",
+        "options": [
+          "A feature that periodically saves your work automatically",
+          "A feature that deletes unsaved work",
+          "A feature that uninstalls unused apps",
+          "A feature that compresses images only"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-041",
+        "category": "Office Tools",
+        "text": "In MS Excel, what does 'protecting a sheet' do?",
+        "options": [
+          "Restricts editing of cells to prevent accidental changes",
+          "Deletes all formulas",
+          "Converts the sheet into an image",
+          "Sends the sheet by email"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-042",
+        "category": "Office Tools",
+        "text": "In MS Word, a 'template' is:",
+        "options": [
+          "A pre-designed document layout used as a starting point",
+          "A type of font",
+          "A printing device",
+          "A spelling dictionary"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-043",
+        "category": "Office Tools",
+        "text": "In MS Excel, the intersection of a row and column is called a:",
+        "options": [
+          "Cell",
+          "Range",
+          "Sheet",
+          "Tab"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-044",
+        "category": "Office Tools",
+        "text": "In MS Outlook, which feature automatically organizes incoming mail based on set conditions?",
+        "options": [
+          "Rules",
+          "Mail Merge",
+          "Pivot Table",
+          "SmartArt"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-045",
+        "category": "Office Tools",
+        "text": "In MS Word, 'Page Break' is used to:",
+        "options": [
+          "Force the following content to start on a new page",
+          "Delete a page",
+          "Add a header",
+          "Insert a table"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-046",
+        "category": "Office Tools",
+        "text": "In MS Excel, which chart type is most suitable for showing proportions of a whole?",
+        "options": [
+          "Pie chart",
+          "Line chart",
+          "Scatter chart",
+          "Column chart only"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-047",
+        "category": "Office Tools",
+        "text": "In MS PowerPoint, 'Animation' refers to:",
+        "options": [
+          "Visual effects applied to objects/text within a single slide",
+          "The transition between two slides",
+          "The file format of the presentation",
+          "The font used in the slide"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-048",
+        "category": "Office Tools",
+        "text": "In Google Sheets/Docs, 'Sharing' with 'Editor' access allows a collaborator to:",
+        "options": [
+          "View and modify the document",
+          "Only view the document",
+          "Only comment on the document",
+          "Delete the account owner's access"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-049",
+        "category": "Office Tools",
+        "text": "In MS Word, the 'Word Count' tool shows:",
+        "options": [
+          "The number of words, characters, and pages in the document",
+          "The number of images in the document",
+          "The number of fonts used",
+          "The file size in MB only"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-050",
+        "category": "Office Tools",
+        "text": "In MS Excel, which of the following is used to restrict the type of data entered into a cell?",
+        "options": [
+          "Data Validation",
+          "Conditional Formatting",
+          "Page Layout",
+          "Track Changes"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-041",
+        "category": "Technology",
+        "text": "What does 'Big Data' generally refer to?",
+        "options": [
+          "Extremely large and complex data sets that traditional tools struggle to process",
+          "A small file stored on a USB drive",
+          "A type of computer virus",
+          "A single spreadsheet document"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-042",
+        "category": "Technology",
+        "text": "What is the main purpose of UPI (Unified Payments Interface) in India?",
+        "options": [
+          "To enable instant real-time digital money transfers between bank accounts",
+          "To provide free internet access",
+          "To act as an antivirus tool",
+          "To store government documents only"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-043",
+        "category": "Technology",
+        "text": "Which of the following best describes a 'VPN' (Virtual Private Network)?",
+        "options": [
+          "A service that creates a secure, encrypted connection over a public network",
+          "A type of computer virus",
+          "A physical network cable",
+          "A local storage device"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-044",
+        "category": "Technology",
+        "text": "What does 'byte' represent in computing?",
+        "options": [
+          "A unit of digital information typically consisting of 8 bits",
+          "A type of computer virus",
+          "A network protocol",
+          "A type of monitor"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-045",
+        "category": "Technology",
+        "text": "Which of the following describes the function of a 'scanner'?",
+        "options": [
+          "Converts physical documents/images into digital format",
+          "Prints digital documents on paper",
+          "Provides wireless internet",
+          "Cools down computer hardware"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-046",
+        "category": "Technology",
+        "text": "What is the primary purpose of 'DBMS' (Database Management System)?",
+        "options": [
+          "To efficiently store, manage, and retrieve data",
+          "To design website layouts",
+          "To provide video editing tools",
+          "To manage printer queues"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-047",
+        "category": "Technology",
+        "text": "Which of the following is a common indicator that a website may be unsafe for entering personal information?",
+        "options": [
+          "Absence of HTTPS/lock icon in the address bar",
+          "The website loads quickly",
+          "The website has a logo",
+          "The website is in a local language"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-048",
+        "category": "Technology",
+        "text": "What is the purpose of 'facial recognition' technology in security systems?",
+        "options": [
+          "To identify or verify a person using facial features",
+          "To improve camera color quality only",
+          "To increase Wi-Fi range",
+          "To compress video files"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-049",
+        "category": "Technology",
+        "text": "Which of the following best describes 'IoT' (Internet of Things)?",
+        "options": [
+          "A network of physical devices connected to the internet that collect and exchange data",
+          "A single computer without internet access",
+          "A type of antivirus software",
+          "A government identity card"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-050",
+        "category": "Technology",
+        "text": "What is the function of an 'ISP' (Internet Service Provider)?",
+        "options": [
+          "Provides individuals/organizations access to the internet",
+          "Manufactures computer hardware",
+          "Designs mobile applications",
+          "Provides electricity to homes"
+        ],
+        "answer": 0
+      }
+    ],
+    "Set 6": [
+      {
+        "id": "APP-051",
+        "category": "Applications",
+        "text": "Biometric attendance applications commonly use which method for identification?",
+        "options": [
+          "Fingerprint or facial recognition",
+          "Only typed passwords",
+          "Only email addresses",
+          "Only postal address"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-052",
+        "category": "Applications",
+        "text": "Which of the following is a common reason to update an application?",
+        "options": [
+          "To fix bugs and improve security",
+          "To permanently delete all data",
+          "To disconnect from the internet",
+          "To remove the operating system"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-053",
+        "category": "Applications",
+        "text": "A virtual desktop feature in an OS allows a user to:",
+        "options": [
+          "Create multiple separate desktop workspaces",
+          "Physically add a new monitor",
+          "Delete installed applications",
+          "Increase battery life"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-054",
+        "category": "Applications",
+        "text": "Which of the following is an example of an e-governance application used by citizens in India?",
+        "options": [
+          "DigiLocker",
+          "Notepad",
+          "Paint",
+          "Windows Media Player"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-055",
+        "category": "Applications",
+        "text": "What does 'application compatibility' generally refer to?",
+        "options": [
+          "Whether software can run properly on a given OS/hardware",
+          "The color of the application icon",
+          "The number of employees who made the app",
+          "The price of the application"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-056",
+        "category": "Applications",
+        "text": "A 'read receipt' feature in an email or messaging application confirms:",
+        "options": [
+          "That the recipient has opened/read the message",
+          "That the message was deleted",
+          "That the internet is disconnected",
+          "That the file was compressed"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-057",
+        "category": "Applications",
+        "text": "Which of the following is NOT typically considered application software?",
+        "options": [
+          "BIOS/firmware",
+          "Word processor",
+          "Spreadsheet program",
+          "Presentation software"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-058",
+        "category": "Applications",
+        "text": "The primary purpose of 'Find and Replace' in an application is to:",
+        "options": [
+          "Search for text and optionally substitute it with other text",
+          "Print the document",
+          "Change the file format",
+          "Install updates"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-059",
+        "category": "Applications",
+        "text": "Which of the following applications is commonly used for scanning and digitizing physical documents?",
+        "options": [
+          "A scanner application (e.g., CamScanner)",
+          "A calculator application",
+          "A media player",
+          "An antivirus application"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "APP-060",
+        "category": "Applications",
+        "text": "Which of the following is an example of a video conferencing application?",
+        "options": [
+          "Microsoft Teams",
+          "Microsoft Paint",
+          "Notepad",
+          "File Explorer"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-051",
+        "category": "Office Tools",
+        "text": "In MS PowerPoint, exporting a presentation as a video is possible mainly to:",
+        "options": [
+          "Share the slideshow as a playable video file",
+          "Reduce the number of slides",
+          "Add spell check",
+          "Merge with another presentation"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-052",
+        "category": "Office Tools",
+        "text": "In MS Word, 'Columns' formatting is often used to create a layout similar to:",
+        "options": [
+          "A newspaper or newsletter",
+          "A spreadsheet",
+          "A database table",
+          "An email inbox"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-053",
+        "category": "Office Tools",
+        "text": "In MS Excel, the formula bar is used to:",
+        "options": [
+          "View and edit the content/formula of the selected cell",
+          "Change the color theme of the workbook",
+          "Insert a picture",
+          "Print the worksheet"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-054",
+        "category": "Office Tools",
+        "text": "Which Google Workspace application is the equivalent of MS Word?",
+        "options": [
+          "Google Docs",
+          "Google Sheets",
+          "Google Slides",
+          "Google Forms"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-055",
+        "category": "Office Tools",
+        "text": "Which Google Workspace application is the equivalent of MS Excel?",
+        "options": [
+          "Google Sheets",
+          "Google Docs",
+          "Google Slides",
+          "Google Keep"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-056",
+        "category": "Office Tools",
+        "text": "In MS Word, 'Version History' or saved backups mainly help to:",
+        "options": [
+          "Recover or review earlier versions of a document",
+          "Increase printing speed",
+          "Change the page color",
+          "Add a signature automatically"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-057",
+        "category": "Office Tools",
+        "text": "In MS Excel, what does the function =COUNT(range) do?",
+        "options": [
+          "Counts the number of cells containing numeric values",
+          "Adds all numeric values",
+          "Finds the average value",
+          "Finds the maximum value"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-058",
+        "category": "Office Tools",
+        "text": "In MS PowerPoint, a 'Theme' primarily controls a presentation's:",
+        "options": [
+          "Overall colors, fonts, and design style",
+          "Number of slides",
+          "File size only",
+          "Speaker notes"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-059",
+        "category": "Office Tools",
+        "text": "In MS Word, 'Comments' are used to:",
+        "options": [
+          "Add remarks or feedback on specific parts of a document without changing the text itself",
+          "Automatically correct grammar",
+          "Merge two documents",
+          "Password-protect a paragraph"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "OFT-060",
+        "category": "Office Tools",
+        "text": "In MS Excel, which function finds the highest value in a range?",
+        "options": [
+          "=MAX(range)",
+          "=MIN(range)",
+          "=SUM(range)",
+          "=COUNT(range)"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-051",
+        "category": "Technology",
+        "text": "Which of the following best describes 'blockchain' technology?",
+        "options": [
+          "A distributed, tamper-resistant digital ledger of transactions",
+          "A type of computer monitor",
+          "A wired network cable",
+          "A method to format hard disks"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-052",
+        "category": "Technology",
+        "text": "What is the primary risk of using public Wi-Fi without a VPN for sensitive transactions?",
+        "options": [
+          "Data can be intercepted by unauthorized parties",
+          "Battery drains faster",
+          "The screen brightness reduces",
+          "The device automatically restarts"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-053",
+        "category": "Technology",
+        "text": "Which of the following best defines 'cybercrime'?",
+        "options": [
+          "A criminal activity that involves a computer, network, or digital device",
+          "A type of hardware failure",
+          "A legal method of data backup",
+          "A government scheme for internet subsidy"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-054",
+        "category": "Technology",
+        "text": "What is the purpose of 'CCTV' surveillance systems commonly used by law enforcement?",
+        "options": [
+          "To monitor and record activity in a specific area for security purposes",
+          "To provide internet access",
+          "To charge mobile phones",
+          "To print documents"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-055",
+        "category": "Technology",
+        "text": "What does 'e-governance' primarily refer to?",
+        "options": [
+          "Use of digital technology to deliver government services to citizens",
+          "A private banking service",
+          "A type of antivirus program",
+          "A hardware manufacturing process"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-056",
+        "category": "Technology",
+        "text": "Which of the following best describes 'machine learning'?",
+        "options": [
+          "A subset of AI where systems learn patterns from data to improve performance",
+          "A method of manually programming every possible outcome",
+          "A type of computer hardware",
+          "A method of printing documents faster"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-057",
+        "category": "Technology",
+        "text": "What is the purpose of 'data encryption' in mobile banking applications?",
+        "options": [
+          "To protect sensitive financial data from unauthorized access",
+          "To increase the app's download speed",
+          "To change the app's color theme",
+          "To reduce the app's file size only"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-058",
+        "category": "Technology",
+        "text": "Which of the following describes 'bandwidth' in networking?",
+        "options": [
+          "The maximum rate of data transfer across a network path",
+          "The physical length of a network cable",
+          "The number of computers in an office",
+          "The color of network cables"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-059",
+        "category": "Technology",
+        "text": "What is the main purpose of 'digital signatures' in official documents?",
+        "options": [
+          "To verify the authenticity and integrity of an electronic document",
+          "To make the document print faster",
+          "To add color to the document",
+          "To compress the document size"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "TEC-060",
+        "category": "Technology",
+        "text": "Which of the following is considered good practice for creating a strong password?",
+        "options": [
+          "Using a mix of uppercase, lowercase, numbers, and symbols",
+          "Using your name and date of birth only",
+          "Using the same short password everywhere",
+          "Sharing your password with colleagues"
+        ],
+        "answer": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,615 @@
+{
+  "_meta": {
+    "note": "Sample/demo candidate data for the SCTPC Online Exam (60 candidates: 6 sets x 10 centers, 1 each). Replace with the real ~300-candidate roster before go-live -- see csv_to_candidates.py to generate candidates.json from a spreadsheet. Times are ISO 8601 with the +05:30 (India) offset. batchStart/batchEnd define the LOGIN WINDOW -- a candidate may log in any time between these two timestamps. Once logged in, the exam itself always runs for exactly 30 minutes from the moment 'Start Examination' is clicked, even if that runs past batchEnd.",
+    "timezone": "Asia/Kolkata (+05:30)",
+    "generatedFor": "Exam for SCTPCs",
+    "passwordPolicy": "Plain-text passwords below are placeholders for a fully client-side/offline demo only. See README Security Notes before using with real candidates.",
+    "batchLegend": {
+      "Set 1 & Set 2": "Batch A -- 09:00-12:00 on 2026-09-11 (active in the demo data)",
+      "Set 3 & Set 4": "Batch B -- 13:00-16:00 on 2026-09-11 (future in the demo data, shows the 'too early' message)",
+      "Set 5 & Set 6": "Batch C -- 09:00-12:00 on 2026-09-10 (past in the demo data, shows the 'too late' message)"
+    }
+  },
+  "candidates": [
+    {
+      "candidateId": "SCTPC-S1-C01",
+      "name": "K. Ramesh Babu",
+      "mobile": "9000000001",
+      "password": "S1C01@Pass",
+      "set": "Set 1",
+      "center": "Center 1",
+      "batchStart": "2026-09-11T09:00:00+05:30",
+      "batchEnd": "2026-09-11T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S1-C02",
+      "name": "P. Lakshmi Devi",
+      "mobile": "9000000002",
+      "password": "S1C02@Pass",
+      "set": "Set 1",
+      "center": "Center 2",
+      "batchStart": "2026-09-11T09:00:00+05:30",
+      "batchEnd": "2026-09-11T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S1-C03",
+      "name": "M. Suresh Kumar",
+      "mobile": "9000000003",
+      "password": "S1C03@Pass",
+      "set": "Set 1",
+      "center": "Center 3",
+      "batchStart": "2026-09-11T09:00:00+05:30",
+      "batchEnd": "2026-09-11T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S1-C04",
+      "name": "T. Anitha Rani",
+      "mobile": "9000000004",
+      "password": "S1C04@Pass",
+      "set": "Set 1",
+      "center": "Center 4",
+      "batchStart": "2026-09-11T09:00:00+05:30",
+      "batchEnd": "2026-09-11T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S1-C05",
+      "name": "V. Srinivasa Rao",
+      "mobile": "9000000005",
+      "password": "S1C05@Pass",
+      "set": "Set 1",
+      "center": "Center 5",
+      "batchStart": "2026-09-11T09:00:00+05:30",
+      "batchEnd": "2026-09-11T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S1-C06",
+      "name": "G. Padmavathi",
+      "mobile": "9000000006",
+      "password": "S1C06@Pass",
+      "set": "Set 1",
+      "center": "Center 6",
+      "batchStart": "2026-09-11T09:00:00+05:30",
+      "batchEnd": "2026-09-11T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S1-C07",
+      "name": "D. Venkateswarlu",
+      "mobile": "9000000007",
+      "password": "S1C07@Pass",
+      "set": "Set 1",
+      "center": "Center 7",
+      "batchStart": "2026-09-11T09:00:00+05:30",
+      "batchEnd": "2026-09-11T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S1-C08",
+      "name": "N. Swathi Reddy",
+      "mobile": "9000000008",
+      "password": "S1C08@Pass",
+      "set": "Set 1",
+      "center": "Center 8",
+      "batchStart": "2026-09-11T09:00:00+05:30",
+      "batchEnd": "2026-09-11T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S1-C09",
+      "name": "B. Naga Raju",
+      "mobile": "9000000009",
+      "password": "S1C09@Pass",
+      "set": "Set 1",
+      "center": "Center 9",
+      "batchStart": "2026-09-11T09:00:00+05:30",
+      "batchEnd": "2026-09-11T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S1-C10",
+      "name": "S. Divya Bharathi",
+      "mobile": "9000000010",
+      "password": "S1C10@Pass",
+      "set": "Set 1",
+      "center": "Center 10",
+      "batchStart": "2026-09-11T09:00:00+05:30",
+      "batchEnd": "2026-09-11T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S2-C01",
+      "name": "K. Chandra Sekhar",
+      "mobile": "9000000011",
+      "password": "S2C01@Pass",
+      "set": "Set 2",
+      "center": "Center 1",
+      "batchStart": "2026-09-11T09:00:00+05:30",
+      "batchEnd": "2026-09-11T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S2-C02",
+      "name": "R. Haritha",
+      "mobile": "9000000012",
+      "password": "S2C02@Pass",
+      "set": "Set 2",
+      "center": "Center 2",
+      "batchStart": "2026-09-11T09:00:00+05:30",
+      "batchEnd": "2026-09-11T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S2-C03",
+      "name": "A. Mahesh Babu",
+      "mobile": "9000000013",
+      "password": "S2C03@Pass",
+      "set": "Set 2",
+      "center": "Center 3",
+      "batchStart": "2026-09-11T09:00:00+05:30",
+      "batchEnd": "2026-09-11T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S2-C04",
+      "name": "J. Sirisha",
+      "mobile": "9000000014",
+      "password": "S2C04@Pass",
+      "set": "Set 2",
+      "center": "Center 4",
+      "batchStart": "2026-09-11T09:00:00+05:30",
+      "batchEnd": "2026-09-11T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S2-C05",
+      "name": "C. Ravi Teja",
+      "mobile": "9000000015",
+      "password": "S2C05@Pass",
+      "set": "Set 2",
+      "center": "Center 5",
+      "batchStart": "2026-09-11T09:00:00+05:30",
+      "batchEnd": "2026-09-11T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S2-C06",
+      "name": "P. Naveen Kumar",
+      "mobile": "9000000016",
+      "password": "S2C06@Pass",
+      "set": "Set 2",
+      "center": "Center 6",
+      "batchStart": "2026-09-11T09:00:00+05:30",
+      "batchEnd": "2026-09-11T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S2-C07",
+      "name": "L. Vasantha Kumari",
+      "mobile": "9000000017",
+      "password": "S2C07@Pass",
+      "set": "Set 2",
+      "center": "Center 7",
+      "batchStart": "2026-09-11T09:00:00+05:30",
+      "batchEnd": "2026-09-11T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S2-C08",
+      "name": "Y. Praveen Reddy",
+      "mobile": "9000000018",
+      "password": "S2C08@Pass",
+      "set": "Set 2",
+      "center": "Center 8",
+      "batchStart": "2026-09-11T09:00:00+05:30",
+      "batchEnd": "2026-09-11T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S2-C09",
+      "name": "M. Kavitha",
+      "mobile": "9000000019",
+      "password": "S2C09@Pass",
+      "set": "Set 2",
+      "center": "Center 9",
+      "batchStart": "2026-09-11T09:00:00+05:30",
+      "batchEnd": "2026-09-11T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S2-C10",
+      "name": "S. Bhaskar Rao",
+      "mobile": "9000000020",
+      "password": "S2C10@Pass",
+      "set": "Set 2",
+      "center": "Center 10",
+      "batchStart": "2026-09-11T09:00:00+05:30",
+      "batchEnd": "2026-09-11T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S3-C01",
+      "name": "K. Sowjanya",
+      "mobile": "9000000021",
+      "password": "S3C01@Pass",
+      "set": "Set 3",
+      "center": "Center 1",
+      "batchStart": "2026-09-11T13:00:00+05:30",
+      "batchEnd": "2026-09-11T16:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S3-C02",
+      "name": "T. Gopal Krishna",
+      "mobile": "9000000022",
+      "password": "S3C02@Pass",
+      "set": "Set 3",
+      "center": "Center 2",
+      "batchStart": "2026-09-11T13:00:00+05:30",
+      "batchEnd": "2026-09-11T16:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S3-C03",
+      "name": "V. Deepthi",
+      "mobile": "9000000023",
+      "password": "S3C03@Pass",
+      "set": "Set 3",
+      "center": "Center 3",
+      "batchStart": "2026-09-11T13:00:00+05:30",
+      "batchEnd": "2026-09-11T16:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S3-C04",
+      "name": "N. Rajesh",
+      "mobile": "9000000024",
+      "password": "S3C04@Pass",
+      "set": "Set 3",
+      "center": "Center 4",
+      "batchStart": "2026-09-11T13:00:00+05:30",
+      "batchEnd": "2026-09-11T16:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S3-C05",
+      "name": "G. Anusha",
+      "mobile": "9000000025",
+      "password": "S3C05@Pass",
+      "set": "Set 3",
+      "center": "Center 5",
+      "batchStart": "2026-09-11T13:00:00+05:30",
+      "batchEnd": "2026-09-11T16:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S3-C06",
+      "name": "D. Krishna Murthy",
+      "mobile": "9000000026",
+      "password": "S3C06@Pass",
+      "set": "Set 3",
+      "center": "Center 6",
+      "batchStart": "2026-09-11T13:00:00+05:30",
+      "batchEnd": "2026-09-11T16:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S3-C07",
+      "name": "B. Sunitha",
+      "mobile": "9000000027",
+      "password": "S3C07@Pass",
+      "set": "Set 3",
+      "center": "Center 7",
+      "batchStart": "2026-09-11T13:00:00+05:30",
+      "batchEnd": "2026-09-11T16:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S3-C08",
+      "name": "S. Vijay Kumar",
+      "mobile": "9000000028",
+      "password": "S3C08@Pass",
+      "set": "Set 3",
+      "center": "Center 8",
+      "batchStart": "2026-09-11T13:00:00+05:30",
+      "batchEnd": "2026-09-11T16:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S3-C09",
+      "name": "A. Manasa",
+      "mobile": "9000000029",
+      "password": "S3C09@Pass",
+      "set": "Set 3",
+      "center": "Center 9",
+      "batchStart": "2026-09-11T13:00:00+05:30",
+      "batchEnd": "2026-09-11T16:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S3-C10",
+      "name": "J. Ramana",
+      "mobile": "9000000030",
+      "password": "S3C10@Pass",
+      "set": "Set 3",
+      "center": "Center 10",
+      "batchStart": "2026-09-11T13:00:00+05:30",
+      "batchEnd": "2026-09-11T16:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S4-C01",
+      "name": "C. Prasanna Lakshmi",
+      "mobile": "9000000031",
+      "password": "S4C01@Pass",
+      "set": "Set 4",
+      "center": "Center 1",
+      "batchStart": "2026-09-11T13:00:00+05:30",
+      "batchEnd": "2026-09-11T16:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S4-C02",
+      "name": "P. Siva Kumar",
+      "mobile": "9000000032",
+      "password": "S4C02@Pass",
+      "set": "Set 4",
+      "center": "Center 2",
+      "batchStart": "2026-09-11T13:00:00+05:30",
+      "batchEnd": "2026-09-11T16:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S4-C03",
+      "name": "L. Anusha Reddy",
+      "mobile": "9000000033",
+      "password": "S4C03@Pass",
+      "set": "Set 4",
+      "center": "Center 3",
+      "batchStart": "2026-09-11T13:00:00+05:30",
+      "batchEnd": "2026-09-11T16:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S4-C04",
+      "name": "Y. Ganesh",
+      "mobile": "9000000034",
+      "password": "S4C04@Pass",
+      "set": "Set 4",
+      "center": "Center 4",
+      "batchStart": "2026-09-11T13:00:00+05:30",
+      "batchEnd": "2026-09-11T16:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S4-C05",
+      "name": "M. Rani",
+      "mobile": "9000000035",
+      "password": "S4C05@Pass",
+      "set": "Set 4",
+      "center": "Center 5",
+      "batchStart": "2026-09-11T13:00:00+05:30",
+      "batchEnd": "2026-09-11T16:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S4-C06",
+      "name": "S. Ravindra",
+      "mobile": "9000000036",
+      "password": "S4C06@Pass",
+      "set": "Set 4",
+      "center": "Center 6",
+      "batchStart": "2026-09-11T13:00:00+05:30",
+      "batchEnd": "2026-09-11T16:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S4-C07",
+      "name": "K. Meena",
+      "mobile": "9000000037",
+      "password": "S4C07@Pass",
+      "set": "Set 4",
+      "center": "Center 7",
+      "batchStart": "2026-09-11T13:00:00+05:30",
+      "batchEnd": "2026-09-11T16:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S4-C08",
+      "name": "T. Satish",
+      "mobile": "9000000038",
+      "password": "S4C08@Pass",
+      "set": "Set 4",
+      "center": "Center 8",
+      "batchStart": "2026-09-11T13:00:00+05:30",
+      "batchEnd": "2026-09-11T16:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S4-C09",
+      "name": "V. Priyanka",
+      "mobile": "9000000039",
+      "password": "S4C09@Pass",
+      "set": "Set 4",
+      "center": "Center 9",
+      "batchStart": "2026-09-11T13:00:00+05:30",
+      "batchEnd": "2026-09-11T16:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S4-C10",
+      "name": "N. Dinesh",
+      "mobile": "9000000040",
+      "password": "S4C10@Pass",
+      "set": "Set 4",
+      "center": "Center 10",
+      "batchStart": "2026-09-11T13:00:00+05:30",
+      "batchEnd": "2026-09-11T16:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S5-C01",
+      "name": "G. Sravani",
+      "mobile": "9000000041",
+      "password": "S5C01@Pass",
+      "set": "Set 5",
+      "center": "Center 1",
+      "batchStart": "2026-09-10T09:00:00+05:30",
+      "batchEnd": "2026-09-10T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S5-C02",
+      "name": "D. Anil Kumar",
+      "mobile": "9000000042",
+      "password": "S5C02@Pass",
+      "set": "Set 5",
+      "center": "Center 2",
+      "batchStart": "2026-09-10T09:00:00+05:30",
+      "batchEnd": "2026-09-10T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S5-C03",
+      "name": "B. Jyothi",
+      "mobile": "9000000043",
+      "password": "S5C03@Pass",
+      "set": "Set 5",
+      "center": "Center 3",
+      "batchStart": "2026-09-10T09:00:00+05:30",
+      "batchEnd": "2026-09-10T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S5-C04",
+      "name": "S. Kiran Kumar",
+      "mobile": "9000000044",
+      "password": "S5C04@Pass",
+      "set": "Set 5",
+      "center": "Center 4",
+      "batchStart": "2026-09-10T09:00:00+05:30",
+      "batchEnd": "2026-09-10T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S5-C05",
+      "name": "A. Lavanya",
+      "mobile": "9000000045",
+      "password": "S5C05@Pass",
+      "set": "Set 5",
+      "center": "Center 5",
+      "batchStart": "2026-09-10T09:00:00+05:30",
+      "batchEnd": "2026-09-10T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S5-C06",
+      "name": "J. Srikanth",
+      "mobile": "9000000046",
+      "password": "S5C06@Pass",
+      "set": "Set 5",
+      "center": "Center 6",
+      "batchStart": "2026-09-10T09:00:00+05:30",
+      "batchEnd": "2026-09-10T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S5-C07",
+      "name": "C. Nagamani",
+      "mobile": "9000000047",
+      "password": "S5C07@Pass",
+      "set": "Set 5",
+      "center": "Center 7",
+      "batchStart": "2026-09-10T09:00:00+05:30",
+      "batchEnd": "2026-09-10T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S5-C08",
+      "name": "P. Vamsi Krishna",
+      "mobile": "9000000048",
+      "password": "S5C08@Pass",
+      "set": "Set 5",
+      "center": "Center 8",
+      "batchStart": "2026-09-10T09:00:00+05:30",
+      "batchEnd": "2026-09-10T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S5-C09",
+      "name": "L. Padma",
+      "mobile": "9000000049",
+      "password": "S5C09@Pass",
+      "set": "Set 5",
+      "center": "Center 9",
+      "batchStart": "2026-09-10T09:00:00+05:30",
+      "batchEnd": "2026-09-10T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S5-C10",
+      "name": "Y. Ashok",
+      "mobile": "9000000050",
+      "password": "S5C10@Pass",
+      "set": "Set 5",
+      "center": "Center 10",
+      "batchStart": "2026-09-10T09:00:00+05:30",
+      "batchEnd": "2026-09-10T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S6-C01",
+      "name": "M. Sailaja",
+      "mobile": "9000000051",
+      "password": "S6C01@Pass",
+      "set": "Set 6",
+      "center": "Center 1",
+      "batchStart": "2026-09-10T09:00:00+05:30",
+      "batchEnd": "2026-09-10T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S6-C02",
+      "name": "S. Ramu",
+      "mobile": "9000000052",
+      "password": "S6C02@Pass",
+      "set": "Set 6",
+      "center": "Center 2",
+      "batchStart": "2026-09-10T09:00:00+05:30",
+      "batchEnd": "2026-09-10T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S6-C03",
+      "name": "K. Aruna",
+      "mobile": "9000000053",
+      "password": "S6C03@Pass",
+      "set": "Set 6",
+      "center": "Center 3",
+      "batchStart": "2026-09-10T09:00:00+05:30",
+      "batchEnd": "2026-09-10T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S6-C04",
+      "name": "T. Bhargav",
+      "mobile": "9000000054",
+      "password": "S6C04@Pass",
+      "set": "Set 6",
+      "center": "Center 4",
+      "batchStart": "2026-09-10T09:00:00+05:30",
+      "batchEnd": "2026-09-10T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S6-C05",
+      "name": "V. Nirmala",
+      "mobile": "9000000055",
+      "password": "S6C05@Pass",
+      "set": "Set 6",
+      "center": "Center 5",
+      "batchStart": "2026-09-10T09:00:00+05:30",
+      "batchEnd": "2026-09-10T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S6-C06",
+      "name": "N. Suresh",
+      "mobile": "9000000056",
+      "password": "S6C06@Pass",
+      "set": "Set 6",
+      "center": "Center 6",
+      "batchStart": "2026-09-10T09:00:00+05:30",
+      "batchEnd": "2026-09-10T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S6-C07",
+      "name": "G. Vani",
+      "mobile": "9000000057",
+      "password": "S6C07@Pass",
+      "set": "Set 6",
+      "center": "Center 7",
+      "batchStart": "2026-09-10T09:00:00+05:30",
+      "batchEnd": "2026-09-10T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S6-C08",
+      "name": "D. Ramakrishna",
+      "mobile": "9000000058",
+      "password": "S6C08@Pass",
+      "set": "Set 6",
+      "center": "Center 8",
+      "batchStart": "2026-09-10T09:00:00+05:30",
+      "batchEnd": "2026-09-10T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S6-C09",
+      "name": "B. Sandhya",
+      "mobile": "9000000059",
+      "password": "S6C09@Pass",
+      "set": "Set 6",
+      "center": "Center 9",
+      "batchStart": "2026-09-10T09:00:00+05:30",
+      "batchEnd": "2026-09-10T12:00:00+05:30"
+    },
+    {
+      "candidateId": "SCTPC-S6-C10",
+      "name": "S. Mohan Rao",
+      "mobile": "9000000060",
+      "password": "S6C10@Pass",
+      "set": "Set 6",
+      "center": "Center 10",
+      "batchStart": "2026-09-10T09:00:00+05:30",
+      "batchEnd": "2026-09-10T12:00:00+05:30"
+    }
+  ]
+}

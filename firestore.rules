@@ -1,0 +1,92 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    match /exam_status/{candidateId} {
+
+      function isSignedIn() {
+        return request.auth != null;
+      }
+
+      function validStatus(s) {
+        return s in ['logged-in', 'in-progress', 'submitted'];
+      }
+
+      function statusRank(s) {
+        return s == 'logged-in' ? 1 : (s == 'in-progress' ? 2 : (s == 'submitted' ? 3 : 0));
+      }
+
+      function allowedKeys() {
+        return ['candidateId','name','mobile','center','set','batchStart','batchEnd',
+                'status','sessionId','loginAt','startedAt','submittedAt','submitReason',
+                'lastHeartbeat','updatedAt','total','answered','correct','incorrect',
+                'unanswered','scorePercent'];
+      }
+
+      function sameIdentity() {
+        return request.resource.data.candidateId == resource.data.candidateId
+          && request.resource.data.name == resource.data.name
+          && request.resource.data.mobile == resource.data.mobile
+          && request.resource.data.center == resource.data.center
+          && request.resource.data.set == resource.data.set;
+      }
+
+      function staleSession() {
+        return resource.data.lastHeartbeat is timestamp
+          && request.time > resource.data.lastHeartbeat + duration.value(3, 'm');
+      }
+
+      function submittedScoreValid() {
+        return request.resource.data.status != 'submitted' || (
+          request.resource.data.total is number &&
+          request.resource.data.correct is number &&
+          request.resource.data.answered is number &&
+          request.resource.data.total <= 30 &&
+          request.resource.data.correct >= 0 &&
+          request.resource.data.correct <= request.resource.data.total &&
+          request.resource.data.answered >= request.resource.data.correct &&
+          request.resource.data.answered <= request.resource.data.total &&
+          request.resource.data.scorePercent is number &&
+          request.resource.data.scorePercent >= 0 &&
+          request.resource.data.scorePercent <= 100
+        );
+      }
+
+      allow read: if isSignedIn();
+
+      allow create: if isSignedIn()
+        && request.resource.data.keys().hasOnly(allowedKeys())
+        && request.resource.data.candidateId == candidateId
+        && request.resource.data.status == 'logged-in'
+        && request.resource.data.name is string
+        && request.resource.data.mobile is string
+        && request.resource.data.center is string
+        && request.resource.data.set is string
+        && request.resource.data.sessionId is string
+        && request.resource.data.sessionId.size() > 0;
+
+      // Once a document reaches 'submitted' it is FROZEN: no further client
+      // writes of any kind are accepted, even a resubmission of identical
+      // data. This is the single most important line for exam integrity --
+      // it is what makes "submitted" an irreversible, tamper-proof terminal
+      // state at the database level (not just enforced in the app UI).
+      allow update: if isSignedIn()
+        && resource.data.status != 'submitted'
+        && request.resource.data.keys().hasOnly(allowedKeys())
+        && sameIdentity()
+        && validStatus(request.resource.data.status)
+        && (
+             statusRank(request.resource.data.status) >= statusRank(resource.data.status)
+             || staleSession()
+           )
+        && submittedScoreValid();
+
+      allow delete: if false;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

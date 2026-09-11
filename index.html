@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>SCTPC Online Examination Portal</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%230b3d63'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='white'%3E%E2%9A%96%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= TOP BAR ================= -->
+<header class="topbar" id="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <span class="brand-badge">&#9878;</span>
+      <div class="brand-text">
+        <strong>SCTPC Online Examination Portal</strong>
+        <small>Andhra Pradesh Police Department</small>
+      </div>
+    </div>
+    <div class="topbar-right" id="topbarRight"></div>
+  </div>
+</header>
+
+<main id="app" class="app-shell">
+
+  <!-- ================= LOADING SCREEN ================= -->
+  <section id="screen-loading" class="screen active">
+    <div class="center-card">
+      <div class="spinner" aria-hidden="true"></div>
+      <p>Loading examination portal…</p>
+    </div>
+  </section>
+
+  <!-- ================= FATAL ERROR SCREEN ================= -->
+  <section id="screen-fatal" class="screen">
+    <div class="center-card error-card">
+      <div class="icon-circle icon-error">&#10007;</div>
+      <h2>Unable to Load Exam Data</h2>
+      <p id="fatalMessage">Something went wrong while loading the required data files.</p>
+      <ul class="hint-list">
+        <li>Confirm <code>candidates.json</code> and <code>questions.json</code> are present alongside <code>index.html</code>.</li>
+        <li>If opening this file directly from disk, some browsers block local JSON loading — serve the folder using a local web server or GitHub Pages instead.</li>
+        <li>Check your internet connection and reload the page.</li>
+      </ul>
+      <button class="btn btn-primary" onclick="location.reload()">Reload Page</button>
+    </div>
+  </section>
+
+  <!-- ================= LOGIN SCREEN ================= -->
+  <section id="screen-login" class="screen">
+    <div class="login-wrap">
+      <div class="login-card">
+        <div class="login-header">
+          <div class="icon-circle icon-shield">&#9878;</div>
+          <h1>SCTPC Recruitment Examination</h1>
+          <p class="muted">Please sign in with your registered mobile number and password to begin.</p>
+        </div>
+
+        <form id="loginForm" novalidate>
+          <div class="form-group">
+            <label for="mobileInput">Registered Mobile Number</label>
+            <input type="tel" id="mobileInput" inputmode="numeric" maxlength="10" placeholder="10-digit mobile number" autocomplete="off" required>
+          </div>
+          <div class="form-group">
+            <label for="passwordInput">Password</label>
+            <div class="password-field">
+              <input type="password" id="passwordInput" placeholder="Enter your password" autocomplete="off" required>
+              <button type="button" class="pw-toggle" id="pwToggle" aria-label="Show password">&#128065;</button>
+            </div>
+          </div>
+
+          <div id="loginAlert" class="alert alert-error hidden" role="alert"></div>
+          <div id="loginInfo" class="alert alert-info hidden" role="status"></div>
+
+          <button type="submit" class="btn btn-primary btn-block" id="loginBtn">Login to Exam Portal</button>
+        </form>
+
+        <p class="login-footnote">This is a secure, monitored examination environment. Do not share your credentials with anyone.</p>
+      </div>
+      <div class="login-side">
+        <h3>Before you begin</h3>
+        <ul>
+          <li>You may log in only during your allotted batch time slot.</li>
+          <li>The examination consists of <strong>30 objective-type questions</strong> to be completed in <strong>30 minutes</strong>.</li>
+          <li>The exam will <strong>auto-submit</strong> when the timer reaches zero.</li>
+          <li>Once submitted, you cannot re-attempt the examination.</li>
+          <li>Do not refresh, close the tab, or navigate away during the exam.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= INSTRUCTIONS SCREEN ================= -->
+  <section id="screen-instructions" class="screen">
+    <div class="panel-wrap">
+      <div class="panel-card">
+        <h2>Examination Instructions</h2>
+        <p class="muted" id="instrCandidateLine"></p>
+
+        <div class="instructions-grid">
+          <div class="instr-box">
+            <div class="instr-num">30</div>
+            <div class="instr-label">Total Questions</div>
+          </div>
+          <div class="instr-box">
+            <div class="instr-num">30</div>
+            <div class="instr-label">Minutes Duration</div>
+          </div>
+          <div class="instr-box">
+            <div class="instr-num">3</div>
+            <div class="instr-label">Domains Covered</div>
+          </div>
+          <div class="instr-box">
+            <div class="instr-num">1</div>
+            <div class="instr-label">Mark per Question</div>
+          </div>
+        </div>
+
+        <h3>Please read carefully</h3>
+        <ol class="instr-list">
+          <li>The examination contains 30 multiple-choice questions — 10 each from <strong>Applications</strong>, <strong>Office Tools</strong>, and <strong>Technology</strong>.</li>
+          <li>Each question has exactly one correct answer among four options (A, B, C, D).</li>
+          <li>A countdown timer will be visible at all times. The exam will <strong>auto-submit automatically</strong> when time expires.</li>
+          <li>Use the Question Palette to jump to any question, and to see which questions are answered, unanswered, or flagged for review.</li>
+          <li>You may flag a question and revisit it later before final submission.</li>
+          <li>Do not refresh the page or close the browser tab — your progress is saved automatically, but exiting the exam window may be treated as a violation.</li>
+          <li>Once you click <strong>Submit Exam</strong> (or the timer runs out), your answers are final and cannot be changed.</li>
+          <li>Each candidate is permitted only one attempt. Re-login after submission is not allowed.</li>
+        </ol>
+
+        <label class="checkbox-line">
+          <input type="checkbox" id="agreeCheckbox">
+          I have read and understood the instructions above, and I am ready to begin the examination.
+        </label>
+
+        <div class="panel-actions">
+          <button class="btn btn-secondary" id="logoutFromInstr">Cancel &amp; Logout</button>
+          <button class="btn btn-primary" id="startExamBtn" disabled>Start Examination</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXAM SCREEN ================= -->
+  <section id="screen-exam" class="screen">
+    <div class="exam-shell">
+
+      <div class="exam-main">
+        <div class="exam-question-card">
+          <div class="exam-question-meta">
+            <span class="q-index" id="qIndexLabel">Question 1 of 30</span>
+            <span class="q-category" id="qCategoryLabel">Applications</span>
+          </div>
+          <h2 class="q-text" id="qTextLabel"></h2>
+          <div class="q-options" id="qOptionsContainer"></div>
+        </div>
+
+        <div class="exam-nav-buttons">
+          <button class="btn btn-outline" id="prevBtn">&larr; Previous</button>
+          <button class="btn btn-flag" id="flagBtn">&#9873; Flag for Review</button>
+          <button class="btn btn-ghost" id="clearBtn">Clear Response</button>
+          <button class="btn btn-outline" id="nextBtn">Next &rarr;</button>
+        </div>
+      </div>
+
+      <aside class="exam-sidebar">
+        <div class="timer-box" id="timerBox">
+          <div class="timer-label">Time Remaining</div>
+          <div class="timer-clock" id="timerClock">30:00</div>
+        </div>
+
+        <div class="candidate-mini" id="candidateMini"></div>
+
+        <div class="legend">
+          <span><i class="dot dot-answered"></i> Answered</span>
+          <span><i class="dot dot-unanswered"></i> Unanswered</span>
+          <span><i class="dot dot-flagged"></i> Flagged</span>
+          <span><i class="dot dot-current"></i> Current</span>
+        </div>
+
+        <div class="palette" id="palette"></div>
+
+        <div class="sidebar-stats" id="sidebarStats"></div>
+
+        <button class="btn btn-submit btn-block" id="submitBtn">Submit Exam</button>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- ================= RESULT SCREEN ================= -->
+  <section id="screen-result" class="screen">
+    <div class="panel-wrap">
+      <div class="panel-card result-card">
+        <div class="icon-circle icon-done">&#10003;</div>
+        <h2>Examination Submitted</h2>
+        <p class="muted" id="resultCandidateLine"></p>
+        <p class="submit-reason" id="submitReasonLine"></p>
+
+        <div class="score-hero">
+          <div class="score-hero-num" id="scoreHeroNum">0</div>
+          <div class="score-hero-sub">out of <span id="scoreHeroTotal">30</span> (<span id="scorePercent">0%</span>)</div>
+        </div>
+
+        <div class="result-grid">
+          <div class="result-box">
+            <div class="result-num" id="resTotal">30</div>
+            <div class="result-label">Total Questions</div>
+          </div>
+          <div class="result-box">
+            <div class="result-num" id="resAnswered">0</div>
+            <div class="result-label">Answered</div>
+          </div>
+          <div class="result-box result-correct">
+            <div class="result-num" id="resCorrect">0</div>
+            <div class="result-label">Correct</div>
+          </div>
+          <div class="result-box result-incorrect">
+            <div class="result-num" id="resIncorrect">0</div>
+            <div class="result-label">Incorrect</div>
+          </div>
+          <div class="result-box">
+            <div class="result-num" id="resUnanswered">0</div>
+            <div class="result-label">Not Answered</div>
+          </div>
+        </div>
+
+        <div class="category-breakdown" id="categoryBreakdown"></div>
+
+        <div class="panel-actions">
+          <button class="btn btn-secondary" id="downloadJsonBtn">Download Result (JSON)</button>
+          <button class="btn btn-secondary" id="downloadCsvBtn">Download Result (CSV)</button>
+        </div>
+
+        <p class="login-footnote">Your result has been recorded on this device. Please contact the examination coordinator for official score confirmation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ADMIN LOGIN SCREEN ================= -->
+  <section id="screen-admin-login" class="screen">
+    <div class="login-wrap login-wrap-single">
+      <div class="login-card">
+        <div class="login-header">
+          <div class="icon-circle icon-shield">&#128274;</div>
+          <h1>Admin Dashboard Login</h1>
+          <p class="muted">Enter the administrator master key to access the live monitoring &amp; results dashboard.</p>
+        </div>
+        <form id="adminLoginForm" novalidate>
+          <div class="form-group">
+            <label for="adminPasswordInput">Admin Master Key</label>
+            <input type="password" id="adminPasswordInput" placeholder="Enter admin key" autocomplete="off" required>
+          </div>
+          <div id="adminLoginAlert" class="alert alert-error hidden" role="alert"></div>
+          <button type="submit" class="btn btn-primary btn-block">Enter Dashboard</button>
+        </form>
+        <p class="login-footnote">
+          <a href="#" id="adminBackToLogin">&larr; Back to candidate login</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ADMIN DASHBOARD SCREEN ================= -->
+  <section id="screen-admin-dashboard" class="screen">
+    <div class="admin-shell">
+      <div class="admin-header">
+        <div>
+          <h2>Live Examination Monitoring</h2>
+          <p class="muted">Tracking <strong id="adminCandidateCount">0</strong> candidates across all exam centers.</p>
+        </div>
+      </div>
+
+      <div id="adminSyncNotice" class="alert alert-info hidden"></div>
+
+      <div class="admin-tabs">
+        <button class="admin-tab tab-active" id="adminTabMonitoring">Live Monitoring</button>
+        <button class="admin-tab" id="adminTabResults">Results &amp; Export</button>
+      </div>
+
+      <!-- ---- Monitoring panel ---- -->
+      <div id="adminPanelMonitoring">
+        <div class="admin-stat-row" id="adminStatCards"></div>
+
+        <h3 class="admin-subheading">Center-wise Breakdown</h3>
+        <div class="center-grid" id="adminCenterBreakdown"></div>
+
+        <h3 class="admin-subheading">Candidate Monitoring Grid</h3>
+        <div class="admin-filters">
+          <select id="adminCenterFilter">
+            <option value="">All Centers</option>
+          </select>
+          <select id="adminStatusFilter">
+            <option value="">All Statuses</option>
+            <option value="not-logged-in">Not Logged In</option>
+            <option value="logged-in">Logged In</option>
+            <option value="in-progress">Exam In Progress</option>
+            <option value="submitted">Submitted Successfully</option>
+            <option value="time-expired">Time Expired</option>
+          </select>
+          <input type="text" id="adminSearchInput" placeholder="Search name, mobile, or candidate ID…">
+          <span class="admin-count-chip" id="monitoringCount">0 candidates</span>
+        </div>
+        <div class="admin-table-wrap">
+          <table class="admin-table" id="monitoringTable">
+            <thead>
+              <tr>
+                <th>Candidate ID</th><th>Name</th><th>Mobile</th><th>Center</th><th>Set</th><th>Status</th><th>Detail</th>
+              </tr>
+            </thead>
+            <tbody id="monitoringTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ---- Results panel ---- -->
+      <div id="adminPanelResults" class="hidden">
+        <div class="admin-filters">
+          <span class="admin-count-chip" id="resultsCount">0 submitted</span>
+          <button class="btn btn-primary" id="adminExportCsvBtn">Export Results to CSV</button>
+        </div>
+        <div class="admin-table-wrap">
+          <table class="admin-table sortable-table" id="resultsTable">
+            <thead>
+              <tr>
+                <th data-sort-key="candidateId">Candidate ID</th>
+                <th data-sort-key="name">Name</th>
+                <th data-sort-key="mobile">Mobile</th>
+                <th data-sort-key="center">Center</th>
+                <th data-sort-key="set">Set</th>
+                <th data-sort-key="submittedAt">Submitted At</th>
+                <th data-sort-key="correct">Score</th>
+                <th data-sort-key="scorePercent">%</th>
+                <th data-sort-key="submitReason">Type</th>
+              </tr>
+            </thead>
+            <tbody id="resultsTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="app-footer">
+  <p>&copy; <span id="yearSpan"></span> Andhra Pradesh Police Department &mdash; SCTPC Online Examination Portal. For official examination use only.</p>
+</footer>
+
+<!-- Confirm submit modal -->
+<div class="modal-overlay hidden" id="confirmModal">
+  <div class="modal-box">
+    <h3 id="confirmTitle">Submit Examination?</h3>
+    <p id="confirmMessage">You still have unanswered questions. Are you sure you want to submit the exam now? This action cannot be undone.</p>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" id="confirmCancel">Go Back</button>
+      <button class="btn btn-submit" id="confirmOk">Yes, Submit</button>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
