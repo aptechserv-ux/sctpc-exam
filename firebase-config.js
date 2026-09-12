@@ -57,15 +57,16 @@ export function isFirebaseConfigured() {
 
 // How often each candidate's browser pings Firestore with a heartbeat
 // (answered-count + "still here" timestamp) while their exam is in
-// progress. Set conservatively for a ~300-candidate single mass batch to
-// comfortably stay within the Firestore Spark (free) plan's 20,000
-// writes/day quota -- see README.md "Firestore usage budget" for the
-// exact math and how to tune this for your own candidate count/schedule.
-export const HEARTBEAT_INTERVAL_MS = 45 * 1000;
+// progress. Set for the real ~1,189-candidate roster (all sitting the
+// exam within the same calendar day, 2026-09-13, across 10 staggered
+// slots) to comfortably stay within the Firestore Spark (free) plan's
+// 20,000 writes/day quota -- see README.md "Firestore usage budget" for
+// the exact math and how to tune this for your own candidate count/schedule.
+export const HEARTBEAT_INTERVAL_MS = 180 * 1000;
 
 // The admin dashboard "master key". This is a CLIENT-SIDE convenience gate
 // only -- anyone who can view script.js can see this value, so treat it as
 // a shared PIN for keeping casual users out of the dashboard, not as real
 // authentication. See README.md "Security Notes" before relying on this
 // for anything sensitive. Change it before deploying.
-export const ADMIN_PASSWORD = "IgPcs@092026";
+export const ADMIN_PASSWORD = "ChangeThisAdminKey123";

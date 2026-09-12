@@ -24,7 +24,7 @@ import {
 // ------------------------------------------------------------------
 // Configuration
 // ------------------------------------------------------------------
-const QUESTIONS_PER_EXAM = 30;
+const QUESTIONS_PER_EXAM = 35;
 const RANDOMIZE_OPTIONS = true; // shuffle option display order per candidate session
 const TIMER_WARNING_MS = 5 * 60 * 1000;  // amber under 5 minutes
 const TIMER_CRITICAL_MS = 1 * 60 * 1000; // red under 1 minute
@@ -128,7 +128,27 @@ async function loadData() {
     if (!quesData || !quesData.sets || typeof quesData.sets !== "object") throw new Error("questions.json is missing a valid 'sets' object.");
 
     CANDIDATES = candData.candidates;
-    QUESTION_SETS = quesData.sets;
+    QUESTION_SETS = { ...quesData.sets };
+
+    // "aliases" lets a set name reuse another set's questions verbatim (e.g.
+    // an afternoon session repeating the same 5 papers under new set labels,
+    // "Set 6" = "Set 1", etc.) without duplicating question data. Resolved
+    // once here so every other lookup of QUESTION_SETS[candidate.set] below
+    // just works, whether that set is real or an alias.
+    const aliases = quesData.aliases && typeof quesData.aliases === "object" ? quesData.aliases : {};
+    Object.keys(aliases).forEach((aliasName) => {
+      const targetName = aliases[aliasName];
+      if (quesData.sets[aliasName]) {
+        // A real "sets" entry for this name already exists -- it wins over
+        // the alias rather than being silently overwritten by it.
+        return;
+      }
+      if (QUESTION_SETS[targetName]) {
+        QUESTION_SETS[aliasName] = QUESTION_SETS[targetName];
+      } else {
+        console.warn(`Warning: alias "${aliasName}" points to "${targetName}", which does not exist in questions.json.`);
+      }
+    });
 
     Object.keys(QUESTION_SETS).forEach((setName) => {
       const qs = QUESTION_SETS[setName];
@@ -424,7 +444,6 @@ function renderQuestion() {
   const idx = session.currentIndex;
   const q = session.questions[idx];
   setText("qIndexLabel", `Question ${idx + 1} of ${session.questions.length}`);
-  setText("qCategoryLabel", q.category);
   setText("qTextLabel", q.text);
 
   const container = $("qOptionsContainer");
@@ -501,7 +520,7 @@ function renderPalette() {
     if (flagged) btn.classList.add("flagged");
     if (idx === session.currentIndex) btn.classList.add("current");
     btn.textContent = String(idx + 1);
-    btn.title = `Question ${idx + 1} (${q.category})`;
+    btn.title = `Question ${idx + 1}`;
     btn.addEventListener("click", () => { session.currentIndex = idx; persistSession(); renderQuestion(); renderPalette(); });
     palette.appendChild(btn);
   });
@@ -617,16 +636,6 @@ function renderResultScreen(result) {
   setText("resCorrect", String(result.correct));
   setText("resIncorrect", String(result.incorrect));
   setText("resUnanswered", String(result.unanswered));
-
-  const catBox = $("categoryBreakdown");
-  catBox.innerHTML = "";
-  Object.keys(result.categories).forEach((catName) => {
-    const c = result.categories[catName];
-    const row = document.createElement("div");
-    row.className = "cat-row";
-    row.innerHTML = `<span class="cat-name">${escapeHtml(catName)}</span><span class="cat-score">${c.correct} / ${c.total}</span>`;
-    catBox.appendChild(row);
-  });
 
   $("downloadJsonBtn").onclick = () => downloadResultJson(result);
   $("downloadCsvBtn").onclick = () => downloadResultCsv(result);

@@ -187,7 +187,7 @@ export function computeDerivedStatus(candidate, statusDoc, nowMs) {
       code: "in-progress",
       variant: null,
       label: "Exam In Progress",
-      detail: typeof statusDoc.answered === "number" ? `${statusDoc.answered}/${statusDoc.total || 30} answered` : null,
+      detail: typeof statusDoc.answered === "number" ? `${statusDoc.answered}/${statusDoc.total || 35} answered` : null,
     };
   }
 
