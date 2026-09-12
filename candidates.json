@@ -28,8 +28,8 @@
       "password": "9248092990",
       "set": "Set 1",
       "center": "Center 2",
-      "batchStart": "2026-09-11T09:00:00+05:30",
-      "batchEnd": "2026-09-11T12:00:00+05:30"
+      "batchStart": "2026-09-12T13:30:00+05:30",
+      "batchEnd": "2026-09-12T14:00:00+05:30"
     },
     {
       "candidateId": "SCTPC-S1-C03",
@@ -38,8 +38,8 @@
       "password": "9000640658",
       "set": "Set 1",
       "center": "Center 3",
-      "batchStart": "2026-09-11T09:00:00+05:30",
-      "batchEnd": "2026-09-11T12:00:00+05:30"
+      "batchStart": "2026-09-12T13:30:00+05:30",
+      "batchEnd": "2026-09-12T14:00:00+05:30"
     },
     {
       "candidateId": "SCTPC-S1-C04",
