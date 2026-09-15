@@ -34,8 +34,8 @@
       "batchStart": "2026-09-12T17:30:00+05:30",
       "batchEnd": "2026-09-12T18:40:00+05:30"
     }, {
-      "candidateId": "Test2",
-      "name": "SUDA",
+      "candidateId": "Test4",
+      "name": "SUDA1",
       "mobile": "8712655709",
       "password": "8712655709",
       "set": "Set 1",
